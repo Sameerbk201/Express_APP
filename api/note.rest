@@ -1,0 +1,55 @@
+###
+GET http://localhost:3000/api/note/test HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+
+###
+POST http://localhost:3000/api/note/createnote HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+{
+    "title":"note2",
+    "content":"content2"
+}
+
+###
+POST http://localhost:3000/api/note/createprivatenote HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+{
+    "title":"note12",
+    "content":"content12",
+    "key":"key"
+}
+
+
+###
+GET http://localhost:3000/api/note/fetchallnotes HTTP/1.1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+
+###
+PUT http://localhost:3000/api/note/makeprivate/63eaf4807d429fd3a211d06b HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+{
+    "key":"u1"
+}
+
+###
+PUT http://localhost:3000/api/note/updatenote/63eaf4807d429fd3a211d06b HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
+
+{
+    "title":"updatedNote",
+    "content":"updated note 🔥🔥"
+}
+
+###
+DELETE HTTP/1.1 http://localhost:3000/api/note/deletenote/63eaf4807d429fd3a211d06b HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2VhZWY3ZTNkYjk4YWJjYjE3MmMxNzkiLCJ1c2VybmFtZSI6InUxIiwiZW1haWwiOiJ1MUBnbWFpbC5jb20iLCJpYXQiOjE2NzYzNDExNTR9._Ee2oOpEx5WZhvmustEa9CSFAxTvD8GlnhguGFAF11w
